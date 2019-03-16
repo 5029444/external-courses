@@ -7,15 +7,14 @@ console.log (dupe()); // поглядим на вывод
 
 function dupe () {
 for (var i = 0; i < arrNum.length; i++) {
-	for (var j = 1; j < arrNum.length-1; j++) {
+	for (var j = i+1; j < arrNum.length; j++) {
 		if (arrNum [i] == arrNum [j]) {
-			//console.log ("Дубликат на индексах " + i + ", " + j)
+			console.log ("Дубликат на индексах " + i + ", " + j)
 			return true
-		} else {
-			return false
 		}
 	}
 }
+return false
 }
 
 //console.log (arrNum.every(isSame));
@@ -30,8 +29,8 @@ for (j = 0; j < (rndI (10, 1000)); j++) {
 	for (k = 1; k < (rndI (2, 9)); k++) {
 	numt = (String.fromCharCode(rndI (48, 57)));
 	num3 = num3 + numt;
-	if ((+num3) > 100000){ num3 = 0;
-	}
+	//if ((+num3) > 100000){ num3 = 0;
+	//}
 }
 if ((qt % 2) != 0) {
 num3 = 124;
