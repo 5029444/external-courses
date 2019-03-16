@@ -1,16 +1,27 @@
 var arrNum = [];
 
+
 arrFill (); //заполним массив разными или одинаковыми числовыми значениями
+console.log (dupe()); // поглядим на вывод 
 
-// arrNum.forEach(function(value, index) {
-//  console.log(value, index);
-//});
 
-console.log (arrNum.every(isSame));
-
-function isSame (){
-return (arrNum [0] === arrNum [1]);
+function dupe () {
+for (var i = 0; i < arrNum.length; i++) {
+	for (var j = 1; j < arrNum.length-1; j++) {
+		if (arrNum [i] == arrNum [j]) {
+			//console.log ("Дубликат на индексах " + i + ", " + j)
+			return true
+		} else {
+			return false
+		}
+	}
 }
+}
+
+//console.log (arrNum.every(isSame));
+//function isSame (){
+//return (arrNum [0] === arrNum [1]);
+//}
 
 function arrFill () {
 	qt = (String.fromCharCode(rndI (48, 57)));

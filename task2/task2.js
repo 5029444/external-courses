@@ -4,10 +4,10 @@ var arrSymb = [];
 arrFill ()
 
 // покажем что получилось
-console.log ("число элементов : ", arrSymb.length);
 consOut ()
 
 function consOut () {
+console.log ("число элементов : ", arrSymb.length);
 for(var i=0; i<arrSymb.length; i++) {
 console.log (arrSymb [i]);
 	}

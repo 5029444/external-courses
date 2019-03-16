@@ -1,7 +1,7 @@
 var arrNum = [];
 
 arrFill (); //заполним массив числовыми значениями
-//arrNum [1] = "ffff"; 
+//arrNum [4] = "ffff"; //для проверки нечисла
 oddEven ();
 
 function oddEven () {
@@ -10,7 +10,8 @@ function oddEven () {
 	var iNull = 0
 for(var i=0; i<arrNum.length; i++) {
 if (isNaN (arrNum [i])) {
-alert ('Какаято хрень');
+console.log ('Какаято хрень на индексе ' + i);
+break;
 } else if (((arrNum [i] % 2) == 0) && ((arrNum [i])) != 0) {
 ++iEven;
 } else if (((arrNum [i] % 2) == 1) && ((arrNum [i])) != 0) {

@@ -1,12 +1,22 @@
 var arrNum = [];
 
 arrFill (); //заполним массив числовыми значениями
+console.log (arrMax())
 
-getMaxOfArray (arrNum);
-
-function getMaxOfArray(arrNum) {
-  console.log (Math.max.apply(null, arrNum));
+function arrMax () {
+	iMax = 0
+	for (var i = 0; i < arrNum.length; i++) {
+		if (arrNum [i] > iMax) {
+			iMax = arrNum [i]
+		}
 }
+return iMax
+}
+
+//getMaxOfArray (arrNum);
+//function getMaxOfArray(arrNum) {
+//  console.log (Math.max.apply(null, arrNum));
+//}
   
 function arrFill () {
 for (j = 0; j < (rndI (10, 1000)); j++) {
