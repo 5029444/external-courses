@@ -1,11 +1,11 @@
 var arrNum = [];
 
 
-arrFill (); //заполним массив разными или одинаковыми числовыми значениями
-console.log (dupe()); // поглядим на вывод 
+arrFill (arrNum); //заполним массив разными или одинаковыми числовыми значениями
+console.log (dupe(arrNum)); // поглядим на вывод 
 
 
-function dupe () {
+function dupe (arrNum) {
 for (var i = 0; i < arrNum.length; i++) {
 	for (var j = i+1; j < arrNum.length; j++) {
 		if (arrNum [i] == arrNum [j]) {
@@ -22,7 +22,7 @@ return false
 //return (arrNum [0] === arrNum [1]);
 //}
 
-function arrFill () {
+function arrFill (arrNum) {
 	qt = (String.fromCharCode(rndI (48, 57)));
 for (j = 0; j < (rndI (10, 1000)); j++) {
 	num3 = (String.fromCharCode(rndI (48, 57)));
@@ -37,6 +37,7 @@ num3 = 124;
 }
 arrNum.push (+num3);
 }
+return arrNum;
 }
 
 function rndI (min, max) {

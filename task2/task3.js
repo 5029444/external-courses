@@ -1,10 +1,10 @@
 var arrNum = [];
 
-arrFill (); //заполним массив числовыми значениями
+arrFill (arrNum); //заполним массив числовыми значениями
 //arrNum [4] = "ffff"; //для проверки нечисла
-oddEven ();
+oddEven (arrNum);
 
-function oddEven () {
+function oddEven (arrNum) {
 	var iEven = 0
 	var iOdds = 0
 	var iNull = 0
@@ -23,7 +23,7 @@ break;
 console.log (" четных: ", iEven, " нечетных: ", iOdds," нулей: ", iNull)
 }
 
-function arrFill () {
+function arrFill (arrNum) {
 for (j = 0; j < (rndI (10, 1000)); j++) {
 	num3 = (String.fromCharCode(rndI (48, 57)));
 	for (k = 1; k < (rndI (2, 9)); k++) {
@@ -34,6 +34,7 @@ for (j = 0; j < (rndI (10, 1000)); j++) {
 	}
 arrNum.push (+num3);
 }
+return arrNum;
 }
 
 function rndI (min, max) {

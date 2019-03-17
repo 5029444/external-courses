@@ -1,12 +1,12 @@
 var arrSymb = [];
 
 // заполним массив относительно случайной длины относительно случайными значениями
-arrFill ()
+arrFill (arrSymb)
 
 // покажем что получилось
-consOut ()
+consOut (arrSymb);
 
-function consOut () {
+function consOut (arrSymb) {
 console.log ("число элементов : ", arrSymb.length);
 for(var i=0; i<arrSymb.length; i++) {
 console.log (arrSymb [i]);
@@ -19,7 +19,7 @@ function rndI (min, max) {
     return rand;
 }
 
-function arrFill () {
+function arrFill (arrSymb) {
 for (j = 0; j < (rndI (10, 1000)); j++) {
 	sym3 = (String.fromCharCode(rndI (49, 122)));
 	for (k = 1; k < (rndI (2, 9)); k++) {
@@ -28,4 +28,5 @@ for (j = 0; j < (rndI (10, 1000)); j++) {
 	}
 arrSymb.push (sym3);
 }
+return arrSymb;
 }

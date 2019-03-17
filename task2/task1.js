@@ -1,19 +1,22 @@
 var arr = ["a", 1, true, function (){}]; // исходный массив данных
+var rnd = Math.floor(Math.random() * 4); // выбираем рандомный элемент массива
 
-function ret () {
-var j = Math.floor(Math.random() * 5); // выбираем рандомный элемент массива
-if (typeof (arr [j]) == "number" || typeof (arr [j]) == "string" ) {
-return (typeof (arr [j]));
+
+console.log (ret (rnd));
+
+function ret (rnd) {
+if (typeof (arr [rnd]) == "number" || typeof (arr [rnd]) == "string" ) {
+rnd = (typeof (arr [rnd]));
+return rnd;
 } else {
-return undefined; 
-}
-}
-
-console.log (ret ());
+rnd = "undefined";
+return rnd; 
+};
+};
 
 /*
 // тест 100 рандомных итераций
 for (var i = 0; i < 100; i++) {
-console.log (ret ());
+console.log (ret (rnd));
 }
 */

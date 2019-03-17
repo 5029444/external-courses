@@ -1,9 +1,9 @@
 var arrNum = [];
 
-arrFill (); //заполним массив числовыми значениями
-console.log (arrMax())
+arrFill (arrNum); //заполним массив числовыми значениями
+console.log (arrMax(arrNum));
 
-function arrMax () {
+function arrMax (arrNum) {
 	iMax = 0
 	for (var i = 0; i < arrNum.length; i++) {
 		if (arrNum [i] > iMax) {
@@ -18,7 +18,7 @@ return iMax
 //  console.log (Math.max.apply(null, arrNum));
 //}
   
-function arrFill () {
+function arrFill (arrNum) {
 for (j = 0; j < (rndI (10, 1000)); j++) {
 	num3 = (String.fromCharCode(rndI (48, 57)));
 	for (k = 1; k < (rndI (2, 9)); k++) {
@@ -29,6 +29,7 @@ for (j = 0; j < (rndI (10, 1000)); j++) {
 	}
 arrNum.push (+num3);
 }
+return arrNum;
 }
 
 function rndI (min, max) {
