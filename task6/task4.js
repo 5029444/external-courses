@@ -13,7 +13,7 @@ function sameAsFilter(array, callback) {
         item = array[i];
 
         if (callback(item, i, array))  {
-            arrFiltered.push(array[i]);;
+            arrFiltered.push(array[i]);
         };
     };
     return arrFiltered;
