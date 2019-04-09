@@ -1,9 +1,14 @@
-var str = "    Some string from anywhere     "
+var str = " Some string from anywhere "
 
-console.log (str);
-console.log (trimSpaces (str));
+console.log ( trimSpace(str) );
 
-function trimSpaces (str) {
-    str = str.trim(str);
-	return str
+function trimSpace(str) {
+	var newStr = str;
+	if ( newStr[0] == ' ' ) {
+		newStr = newStr.slice(1);
+	};
+	if ( newStr[newStr.length - 1] == ' ' ) {
+		newStr = newStr.slice(0, newStr.length - 1);
+	};
+	return newStr;
 };

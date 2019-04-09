@@ -12,7 +12,7 @@ var Calculator = (function() {
 
         add: function add(num) {
             num = +num;
-            if ( (typeof(num) == "undefined") || (isNaN(num)) ) {
+            if (isNaN(num) ) {
                 num = 0;
             };
             _curState = _curState + num;
@@ -21,7 +21,7 @@ var Calculator = (function() {
 
         subtract: function subtract(num) {
             num = +num;
-            if ( (typeof(num) == "undefined") || (isNaN(num)) ) {
+            if (isNaN(num)) {
                 num = 0;
             };
             _curState = _curState - num;
@@ -30,7 +30,7 @@ var Calculator = (function() {
 
         divide: function divide(num) {
             num = +num;
-            if ( (typeof(num) == "undefined") || (isNaN(num)) || (num == 0) ) {
+            if ( (isNaN(num)) || (num == 0) ) {
                 num = 1;
             };
             if (_curState == 0) {
@@ -44,7 +44,7 @@ var Calculator = (function() {
 
         multiply: function multiply(num) {
             num = +num;
-            if ( (typeof(num) == "undefined") || (isNaN(num)) || (num == 0) ) {
+            if ( (isNaN(num)) || (num == 0) ) {
                 num = 0;
             };
             if (_curState == 0) {
