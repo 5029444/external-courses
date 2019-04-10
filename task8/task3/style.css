@@ -1,0 +1,52 @@
+* { 
+    font-family: "Times New Roman", Times, serif; 
+}
+
+#bord1 {
+    display: inline-block;
+    border:3px solid #ccc7c7;
+    text-align:center;
+    border-style:outset;
+    padding:10px; 
+}
+
+#bord2 {
+    display: inline-block;
+    border:3px solid #363f22;
+    text-align:center;
+    border-style:dotted;
+    padding:10px; 
+}
+
+#bord3 {
+    display: inline-block;
+    border: 2px solid #c6d1d3;
+    outline: 3px solid #161744;
+    padding: 9px; 
+}
+
+#bord4 {
+    display: inline-block;
+    border:2px solid #4b4949;
+    text-align:center;
+    border-radius:10px;
+    padding:10px;
+}
+
+#bord5 {
+    display: inline-block;
+    border:3px solid transparent;
+    text-align:center;
+    border-image: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-image-slice: 1;
+    padding:9px;
+}
+
+#bord6 {
+    display: inline-block;
+    border:3px solid #df0a0a;
+    text-align:center;
+    padding:9px;
+    border-radius:50px;
+    transition: 0.7s all ease-in;
+}
