@@ -1,17 +1,78 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>task4</title>
+<!--пример глобального стиля -->
+    <style>
+           @font-face {
+    font-family: RealTruth; 
+    src: url(fonts/RealTruth.ttf); 
+   }
+        span {
+            text-transform: uppercase;
+            font-family: RealTruth;
+            font-size:3em;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-<p><a name="top"></a></p>
+<p><a id="top"></a></p>
+
+<div id="container">
+
+        <div class="workblock width30pct left">
+                <h2>Title 1</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>
+              <div class="workblock right">
+                <h2>Title 2</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+              </div>  
+<!-- Пример локальных стилей-->
+                  <div class="right" style="padding: 0.5cm; background-image: url(images/draco.png); width: 200px; height: 200px; background-size: cover">
+                    <p style="font-weight: bolder">Beware of Dragons</p>
+                  </div> 
+
+                  <div class="workblock width40pct right" style="padding: 3%; background: linear-gradient(135deg, #f85032 17%,#f85032 17%,#f16f5c 39%,#f6290c 60%,#f6290c 60%,#f02f17 79%,#e73827 100%);">
+                        <span>правда всегда одна </span>
+                      </div>
+
+                    <div class="workblock width40pct left">
+                     <h2>Title 3</h2>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+              <div id="elfish" class="workblock width20pct left">
+                    <h2>Ngil nin</h2>
+                    <p>     Ngil nin el nel <br>
+                            Naun el kree ú a mae <br>
+                            ú el me Síli mae <br>
+                            nin fi li na lo me le ne Menel aduial <br>
+                            dúr i fuin i vah mae <br>
+                            <br>
+                            Ngil nin el nel<br>
+                            du Gli li mae<br>
+                            Ngil fi el me i<br>
+                            dúr fu Nae mae<br>
+                            <br>
+                            An i lu na cu<br>
+                            An i naun lui<br>
+                            A na naun annen<br>
+                            annen ne perónen A<br>
+                         </p>
+                  </div>
 
 
 
-<a href="#top">Наверх</a>
+<div id="foot">
+        <a href="#top">Наверх</a>
+</div>
+
+</div>
+
 
 </body>
 </html>

@@ -1,3 +1,66 @@
-* { 
-    font-family: "Times New Roman", Times, serif; 
+@font-face { 
+    font-family: Tengwar;
+    src: url("fonts/sindar.ttf") format("truetype"); 
 }
+
+h2 {
+    text-align:center;  
+}
+
+#container { 
+    width: 90%;
+    border: 2px dashed #000;
+    padding: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .workblock {
+    background: #E76D13;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding:1%;
+    float:left;
+  }
+
+  .width20pct {
+    width: 20%;
+  }
+
+  .width30pct {
+    width: 30%;  
+    background: #ff4e00;
+  }
+
+  .width40pct {
+    width: 40%;
+    background: #7a3a0b;
+  }
+
+  .left {
+    float:left;
+  }
+
+  .right {
+    float:right;
+  }
+
+  #elfish { 
+    background: #81c474;
+    font-family: Tengwar;
+    text-align:left;
+    padding:10px; 
+  }
+
+  #foot { 
+    display: inline-block;
+    background-color: #7079a1;
+    text-align:center;
+    padding:15px;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 31px;
+    left: 25px;
+  }
