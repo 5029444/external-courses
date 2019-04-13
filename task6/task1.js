@@ -26,10 +26,10 @@ function sameAsSlice(arr, begin, end) {
     };
 
     if ( end < begin)  {
-        end = arr.length;
+        end = begin;
     };
 
-  //     console.log(begin, end);
+    //  console.log(begin, end);
 
     for (i = begin; i < end; i++) {
         arrNew[i - begin] = arr[i];
@@ -38,7 +38,7 @@ function sameAsSlice(arr, begin, end) {
 };
 
 //тесты
-
+/*
 console.log("обычный случай");
 console.log(sameAsSlice(arrTest, 1, 7));
 console.log( (arrTest.slice(1, 7))) ;
@@ -54,3 +54,6 @@ console.log( (arrTest.slice(8))) ;
 console.log("не указан ни begin ни end");
 console.log(sameAsSlice(arrTest));
 console.log( (arrTest.slice())) ;
+*/
+console.log(sameAsSlice(arrTest, -2, -3));
+console.log( (arrTest.slice(-2, -3))) ;
