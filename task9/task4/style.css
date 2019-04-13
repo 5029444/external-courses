@@ -1,0 +1,67 @@
+div {
+  width: 400px;
+  height: 200px;
+
+}
+
+.shadow11 {
+  background: #bfe3d1;
+  margin: 40px 20px 20px 40px;
+}
+
+.shadow12 {
+	background: #90cdaf;
+}
+.shadow13 {
+	background: #60b88d;
+}
+
+.shadow12, .shadow13 {
+  position: relative;
+	bottom: 10px;
+	right: 10px;
+}
+
+#shadow2 {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  background: #60b88d;
+  box-shadow: 10px 10px 0 0 #90cdaf, 20px 20px 0 0 #bfe3d1;
+}
+
+#wrap {
+  position: relative;
+  z-index: 1;
+}
+
+  #shadow3 {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    background: #60b88d;
+  }
+ 
+    #shadow3:before {
+      position: absolute;
+      content:"";
+      width: 400px;
+      height: 200px;
+      background: #90cdaf;
+      top: 10px;
+      left: 10px;
+      z-index: -1;
+    }
+      
+    #shadow3:after {
+      position: absolute;
+      content:"";
+      width: 400px;
+      height: 200px;
+      background: #bfe3d1;
+      top: 20px;
+      left: 20px;
+      z-index: -2;
+    }
+    
