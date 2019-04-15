@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>task10 1</title>
+</head>
+
+<body>
+ 
+  <form action="http://httpbin.org/post" method="POST" class="persdata">
+    <fieldset>
+      <legend>Personal data</legend>
+
+      <div class="inppack">
+        <label>
+          <span>Surname</span>
+          <input type="text" name="surname" required placeholder="Your Surname"/>
+        </label>
+      </div>
+
+      <div class="inppack">
+        <label>
+          <span>First Name</span>
+          <input type="text" name="firstname" required placeholder="Your First Name"/>
+        </label>
+      </div>
+
+      <div class="inppack">
+        <label>
+          <span>Middle Name</span>
+          <input type="text" name="middlename" required placeholder="Your Middle Name"/>
+        </label>
+      </div>
+
+      <div class="inppack">
+        <span>You are:</span>
+
+        <label>
+          <input type="radio" name="gender" value="male" required/>
+          <span>male</span>
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="female"/>
+          <span>female</span>
+        </label>
+      </div>
+
+      <div class="inppack">
+        <label>
+          <span>Age</span>
+          <input type="number" name="age" min="18" max="101" placeholder="18" required/>
+        </label>
+      </div>
+
+      <div class="inppack">
+        <label>
+          <span>Country of Residence</span>
+          <select name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="Australia">Australia</option> 
+            <option value="Austria">Austria</option> 
+            <option value="Azerbaijan">Azerbaijan</option> 
+            <option value="Belarus">Belarus</option> 
+            <option value="Belgium">Belgium</option>
+            <option value="Canada">Canada</option> 
+            <option value="China">China</option> 
+            <option value="Cuba">Cuba</option> 
+            <option value="Cyprus">Cyprus</option> 
+            <option value="Czech Republic">Czech Republic</option> 
+            <option value="Denmark">Denmark</option> 
+            <option value="Estonia">Estonia</option> 
+            <option value="Finland">Finland</option> 
+            <option value="France">France</option> 
+            <option value="Georgia">Georgia</option> 
+            <option value="Germany">Germany</option> 
+            <option value="Greece">Greece</option> 
+            <option value="Hungary">Hungary</option> 
+            <option value="India">India</option> 
+            <option value="Ireland">Ireland</option> 
+            <option value="Israel">Israel</option> 
+            <option value="Italy">Italy</option> 
+            <option value="Japan">Japan</option> 
+            <option value="Kazakhstan">Kazakhstan</option> 
+            <option value="Kyrgyzstan">Kyrgyzstan</option> 
+            <option value="Latvia">Latvia</option> 
+            <option value="Lithuania">Lithuania</option> 
+            <option value="Moldova, Republic of">Moldova, Republic of</option> 
+            <option value="Poland">Poland</option> 
+            <option value="Romania">Romania</option> 
+            <option value="Russian Federation">Russian Federation</option> 
+            <option value="Serbia and Montenegro">Serbia and Montenegro</option> 
+            <option value="Slovakia">Slovakia</option> 
+            <option value="Slovenia">Slovenia</option> 
+            <option value="Spain">Spain</option> 
+            <option value="Sweden">Sweden</option> 
+            <option value="Tajikistan">Tajikistan</option> 
+            <option value="Turkey">Turkey</option> 
+            <option value="Turkmenistan">Turkmenistan</option> 
+            <option value="Ukraine">Ukraine</option> 
+            <option value="United Kingdom">United Kingdom</option> 
+            <option value="United States">United States</option> 
+            <option value="Uzbekistan">Uzbekistan</option>
+            <option value="Other">Other Country</option>	 
+          </select>
+        </label>
+      </div>
+
+      <div class="inppack">
+          <span>City:</span>
+          <label>
+            <input type="checkbox" name="city" value="Ryazan" id="Ryazan"/>
+            <label for="Ryazan">Ryazan</label>
+          </label>
+          <label>
+            <input type="checkbox" name="city" value="Moscow" id="Moscow"/>
+            <label for="Moscow">Moscow</label>
+          </label>
+      </div>
+
+      <div class=inppack>
+          <span>Photography</span>
+          <label><input type="file" name="photo" required /></label>
+        </div>
+  <hr>
+
+      <div class="inppack">
+      <span style="display:inline-block; float: left; margin-right: 1em">Title</span>
+      <select name="title" size="8" required>
+        <optgroup label="Technologies">
+          <option value="Web Master">Web Master</option>
+          <option value="Database Administrator">Database Administrator</option>
+          <option value="Computer-aided design">Computer-aided design</option>
+        </optgroup>
+        <optgroup label="Finance">
+          <option value="Economic Planning">Economic Planning</option>
+          <option value="Management accounting">Management accounting</option>
+          <option value="Budgeting and planning">Budgeting and planning</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="inppack">
+        <label>
+          <span>Salary</span>
+          <input type="range" name="salary" id="salInputId" value="25000" min="20000" max="120000" oninput="salOutputId.value = salInputId.value"/>
+          <output name="salary" id="salOutputId">25000</output>
+        </label>
+      </div>
+
+      <div class="inppack">
+          <textarea name="resume" cols="40" rows="10" placeholder="Tell us about yourself..."></textarea>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+      <div class="inppack">
+        <label>
+          <span>Site</span>
+          <input type="url" name="url" placeholder="www.leningrad.ru"/>
+        </label>
+      </div>
+
+      <div class="inppack">
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete required placeholder="mail@example.com"/>
+          </label>
+      </div>
+
+      <div class="inppack">
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" autocomplete required placeholder="+7 XXX XXX XX XX" minlength="16" maxlength="18" />
+          </label>
+      </div>
+
+    </fieldset>
+
+    <div class="inppack">
+        <label>
+          <span>Password</span>
+          <input type="password" name="pass" autocomplete required minlength="8" placeholder="********"/>
+        </label>
+      </div>
+      <div class="inppack">
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+</div>
+  </form>
+
+</body>
+</html>
