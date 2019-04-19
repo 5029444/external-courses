@@ -2,11 +2,163 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
   <title>task10 3</title>
 </head>
 
 <body>
+  <div class="container">
+      <div id="menumob">
+          <div>=&nbsp;</div>
+        </div>
+    <div id="header">
+        <div id="logo">
+          <div> <img src="images/logo.png"> </div>
+        </div>
+        <div id="geo">
+          <div id="bubble">
+            <div>Saudi Arabia. Alreyadah</div>
+          </div>
+          <div id="icons">
+            <div> 
+              i
+            </div>
+            <span>|</span>
+            <div id="geoicon" onmouseover="changeItem()" onmouseout="rechangeItem()"> 
+                P
+            </div>
+            <span>|</span>
+            <div> 
+                  e 
+            </div>
+          </div>        
+        </div>
+    </div>
+    <div id="menu">
+        <div class="menu-item-wrap">
+          <div class="menu-item"><a href="#">HOME</a></div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="menu-item-wrap">
+          <div class="menu-item"><a href="#about">What about ISAMA</a></div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="menu-item-wrap">
+          <div class="menu-item"><a href="#why">What we do?</a></div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="menu-item-wrap">
+          <div class="menu-item"><a href="#projects">Our projects</a></div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="menu-item-wrap">
+          <div class="menu-item">Exellent team</div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="menu-item-wrap">
+          <div class="menu-item">Contact</div>
+          <div class="nav-item">&nbsp;</div>
+        </div>
+        <div class="spa-item">
+          <div>&nbsp;</div>
+        </div>
+        
+        <div class="search-item">
+            <div id="search-icon">Y</div>
+            <input type="text" name="searchinp" placeholder="Type your search word"/>
+        </div>
+    </div>
+    <div id="main">
+        <div id="tagline1">
+          <div>LET'S DRAW SOME ARTS</div>
+        </div>
+        <div id="tagline2">
+            <div> <span>&</span> make your business much better</div>
+          </div>
+          <p><a name="projects"></a></p>
+          <div class="carousel-wrapper">
+              <span id="target-item-1"></span>
+              <span id="target-item-2"></span>
+              <span id="target-item-3"></span>
+              <div class="carousel-item item-1">
+                <p><img src="images/item1.png"></p>
+                <div class="like"> 
+                    <div class="likesymbol">3&nbsp;</div>
+                    <div class="liketext">&nbsp;Like</div>
+                    <p>&nbsp;</p>
+                    <div class="liketext"></div>
+                    <div class="likesymbol">3&nbsp;</div>
+                    <div class="liketext">&nbsp;Like</div>
+                </div>
+                <a class="arrow arrow-next" href="#target-item-2"></a>
+              </div>
+              <div class="carousel-item item-2">
+                <p><img src="images/item2.png"></p>
+                <div class="like"> 
+                    <div class="likesymbol">3&nbsp;</div>
+                    <div class="liketext">&nbsp;Like</div>
+                    <p>&nbsp;</p>
+                    <div class="liketext"></div>
+                    <div class="likesymbol">3&nbsp;</div>
+                    <div class="liketext">Like</div>
+                </div>
+                <a class="arrow arrow-next" href="#target-item-3"></a>
+              </div>
+              <div class="carousel-item item-3">
+               <p><img src="images/item3.png"></p>
+               <div class="like"> 
+                  <div class="likesymbol">3&nbsp;</div>
+                  <div class="liketext">Like</div>
+                  <p>&nbsp;</p>
+                  <div class="liketext"></div>
+                  <div class="likesymbol">3&nbsp;</div>
+                  <div class="liketext">&nbsp;Like</div>
+              </div>
+                <a class="arrow arrow-next" href="#target-item-1"></a>
+              </div>
+            </div>
+    </div>
+    <div class="row-articles">
+        <div class="article">
+          <div class="art-pic"> 
+              <img src="images/lamp.png">
+          </div>
+          <div class="art-text">
+          <p><a name="about"></a></p>
+          <h3>What about ISAMA</h3>
+          <p> 
+          ISAMA is a marketing foundation located in Riyadh built on the 
+          talent of creation that leads to a modern concept of professionalism. 
+          At ISAMA we believe even if you are good at what you do, you have a great 
+          product or you provide an excellent service. We still can present you a little 
+          better to the world, creating your full identity, provides you with your 
+          marketing plans, design your website, print your publications, design your logo’s 
+          and offices. Simply we give your business the perfect image.
+          </p>
+          </div>
+        </div>
 
-</body>
-</html>
+        <div class="article">
+          <div class="art-pic">
+              <img src="images/bush.png">
+          </div>
+          <div class="art-text">
+              <p><a name="why"></a></p>
+              <h3>Why we exist</h3>
+              <p> 
+              Reaching customer satisfaction through providing them with cutting-edge 
+              technologies that give clients access to a wide range of tools, ensuring 
+              efficient and results-oriented communication solutions, which grant them 
+              a special character that distinguishes them from the others in the business.
+              </p>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="row footer">
+  <div class="footer-item"></div>
+  <div class="footer-item"></div>
+</div>
+</div>
