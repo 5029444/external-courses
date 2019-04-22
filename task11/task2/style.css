@@ -1,0 +1,99 @@
+#container {
+    display: flex;
+    flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  height: 800px;
+  margin: auto; 
+  border: solid 1px #555;
+  }
+
+
+#loader {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px dotted;
+    border-color: #555; 
+    transition: all 0.1s ease;
+  transform: rotate(0deg);
+  animation: spin 2.5s infinite linear;
+  
+}
+
+#container p {
+    position: relative;
+    top:50px;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      border-color: #777;
+      
+    }
+    25% {
+      transform: rotate(90deg);
+      border-color: #999;
+    }
+      50% {
+        transform: rotate(180deg);
+        border-color: #bbb;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        border-color: #aaa;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      border-color: #777;
+     
+    }
+  }
+  
+  #bball {
+position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: solid 1px #555;
+    animation: bounce 3s linear infinite, 
+    moveLeft 25s linear infinite alternate;
+  }
+  @keyframes bounce {
+    0% {bottom: 100%;}
+    25% {
+      bottom: 0;
+      width: 100px;
+      height: 100px;
+    }
+    30% {
+      bottom: 0;
+      height: 50px;
+      width: 110px;
+    }
+    35% {
+      bottom: 0;
+      width: 100px;
+      height: 100px;
+    }
+    70% {
+      bottom: 100%;
+      height: 100px;
+      width: 100px;
+    }
+   
+    100% {
+      bottom: 100%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @keyframes moveLeft {
+    from {left: 0;}
+    to   {left: 100%;}
+  }
