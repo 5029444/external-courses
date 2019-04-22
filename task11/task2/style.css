@@ -1,99 +1,241 @@
 #container {
-    display: flex;
-    flex-direction: column;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 768px;
   width: 100%;
-  height: 800px;
-  margin: auto; 
-  border: solid 1px #555;
-  }
+  min-height: 1024px;
+  max-height: 1024px;
+  margin: auto;
+  padding-bottom: 56.25%;
+}
 
 
 #loader {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px dotted;
-    border-color: #555; 
-    transition: all 0.1s ease;
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  top: 2vw;
+  border-radius: 50%;
+  border: 0.5vw dotted;
+  border-color: #444;
+  transition: all 0.1s ease;
   transform: rotate(0deg);
   animation: spin 2.5s infinite linear;
-  
+
 }
 
 #container p {
-    position: relative;
-    top:50px;
+  position: relative;
+  top: 6.8vw;
+  font-size: 1.2vw;
+  color: #777;
+  z-index: 1
 }
 
 @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      border-color: #777;
-      
-    }
-    25% {
-      transform: rotate(90deg);
-      border-color: #999;
-    }
-      50% {
-        transform: rotate(180deg);
-        border-color: #bbb;
-    }
+  0% {
+    transform: rotate(0deg);
+    border-color: #555;
+    transition: all 0.5s ease;
 
-    75% {
-        transform: rotate(270deg);
-        border-color: #aaa;
-    }
-
-    100% {
-      transform: rotate(360deg);
-      border-color: #777;
-     
-    }
-  }
-  
-  #bball {
-position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: solid 1px #555;
-    animation: bounce 3s linear infinite, 
-    moveLeft 25s linear infinite alternate;
-  }
-  @keyframes bounce {
-    0% {bottom: 100%;}
-    25% {
-      bottom: 0;
-      width: 100px;
-      height: 100px;
-    }
-    30% {
-      bottom: 0;
-      height: 50px;
-      width: 110px;
-    }
-    35% {
-      bottom: 0;
-      width: 100px;
-      height: 100px;
-    }
-    70% {
-      bottom: 100%;
-      height: 100px;
-      width: 100px;
-    }
-   
-    100% {
-      bottom: 100%;
-      width: 100px;
-      height: 100px;
-    }
   }
 
-  @keyframes moveLeft {
-    from {left: 0;}
-    to   {left: 100%;}
+  25% {
+    transform: rotate(90deg);
+    border-color: #888;
   }
+
+  50% {
+    transform: rotate(180deg);
+    border-color: #ccc;
+  }
+
+  75% {
+    transform: rotate(270deg);
+    border-color: #555;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-color: #000;
+
+  }
+}
+
+#bballbox {
+  position: relative;
+  top: 4.5vw;
+  width: 11vw;
+  height: 21vw;
+}
+
+#bball {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  border: solid 1px #555;
+  transition: background 0.5s linear;
+  animation: bounce 5s linear infinite,
+  moveLeft 15s linear infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 50%;
+    background: radial-gradient( #eee 0%, #222 100%);
+    box-shadow: 0px 0px 0.3vw 0.2vw #333;
+    
+  }
+
+  23% {
+    bottom: 0.1%;
+    background: linear-gradient(to bottom, #eee 0%, #222 100%);
+    box-shadow: 0px 1vw 0.3vw 0.2vw #333;
+    width: 4vw;
+    height: 4vw;
+  }
+
+  26% {
+    bottom: 0%;
+    background: linear-gradient(to bottom, #eee 0%, #222 100%);
+    box-shadow: 0px 1vw 0.3vw 0.2vw #333;
+    width: 4.5vw;
+    height: 3.5vw;
+    
+  }
+
+  28% {
+    bottom: 0.1%;
+    background: radial-gradient( #eee 0%, #222 100%);
+    box-shadow: 0px 1vw 0.3vw 0.2vw #333;
+    width: 4vw;
+    height: 4vw;
+    
+  }
+
+  72% {
+    bottom: 99.%;
+    background: linear-gradient(to top, #eee 0%, #222 100%);
+    box-shadow: 0px -1vw 0.3vw 0.2vw #333;
+    width: 4vw;
+    height: 4vw;
+  }
+
+  75% {
+    bottom: 100%;
+    background: linear-gradient(to top, #eee 0%, #222 100%);
+    box-shadow: 0px -1vw 0.3vw 0.2vw #333;
+    width: 4.5vw;
+    height: 3.5vw;
+  }
+
+  76% {
+    bottom: 99.%;
+    background: linear-gradient(to top, #eee 0%, #222 100%);
+    box-shadow: 0px -1vw 0.3vw 0.2vw #333;
+    width: 4vw;
+    height: 4vw;
+  }
+
+  100% {
+    bottom: 50%;
+    background: radial-gradient( #eee 0%, #222 100%);
+    box-shadow: 0px 0px 0.3vw 0.2vw #333;
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 90%;
+  }
+}
+
+#cycle {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  top: 4.5vw;
+  border: solid 1px #555;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, white 0%, black 100%);
+  animation: cycle 10s linear infinite;
+}
+
+@keyframes cycle {
+  10% {
+    border-radius: 50%;
+    background: linear-gradient(to bottom, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  15% {
+    border-radius: 0;
+    background: linear-gradient(to bottom, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  30% {
+    border-radius: 0;
+    background: linear-gradient(to bottom, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  35% {
+    border-radius: 0;
+    background: linear-gradient(to top left, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  40% {
+    border-radius: 0;
+    background: linear-gradient(to top right, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  45% {
+    border-radius: 0;
+    background: linear-gradient(to bottom right, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    border-radius: 0;
+    background: linear-gradient(to bottom left, white 0%, black 100%);
+    transform: scale(1) rotate(0deg);
+  }
+
+  60% {
+    border-radius: 0;
+    background: linear-gradient(to bottom left, white 0%, black 100%);
+    transform: scale(1.2) skewY(20deg);
+    ;
+  }
+
+  70% {
+    border-radius: 0;
+    background: linear-gradient(to bottom left, white 0%, black 100%);
+    transform: scale(1.2) skew(5deg, -20deg);
+  }
+
+  85% {
+    border-radius: 0;
+    background: linear-gradient(to bottom left, white 0%, black 100%);
+    transform: scale(1) rotate(270deg);
+  }
+
+  90% {
+    border-radius: 50%;
+    background: linear-gradient(to bottom, white 0%, black 100%);
+    transform: scale(1) rotate(180deg);
+  }
+
+
+}
