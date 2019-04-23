@@ -1,0 +1,81 @@
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 180px;
+	height: 880px;
+    border: 1px solid #d43737;
+}
+
+#buttonlist {
+    display: flex;
+    width: 180px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #b6b6b6;
+   
+}
+
+#addbutton {
+width: 160px;
+height: 44px;
+cursor: pointer;
+text-transform: uppercase;
+align-content: center;
+background-color: #999999;
+}
+
+#navlist {
+    display: flex;
+    width: 180px;
+    height: 238px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+ align-content: center;
+ align-content: center;
+    background-color: #999999;
+    }
+
+    .navlisti {
+        width: 160px;
+        height: 30px; 
+        align-self: center;
+    }
+
+    #advlist {
+        display: flex;
+        width: 180px;
+        height: 178px;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+     align-content: center;
+     align-content: center;
+        background-color: #999999;   
+    }
+    .advlisti {
+        width: 160px;
+        height: 30px; 
+        align-self: center;
+    }
+
+    #recentlist {
+        display: flex;
+        width: 180px;
+        height: 338px;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+     align-content: center;
+     align-content: center;
+        background-color: #999999;   
+    }
+
+    .recentlisti {
+        display: flex;
+        width: 160px;
+        height: 90px; 
+        justify-content: space-between;
+    }
+
+  
