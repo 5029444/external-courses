@@ -2,32 +2,30 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
- align-content: flex-start;
- width: 400px;
-
+    align-content: center;
+    width: 30vw;
+    margin: auto;
     border: 1px solid #d43737;
 }
 
-input, textarea {
+input,
+textarea {
     display: block;
     width: 100%;
     border: 0;
     outline: 0;
- /*   resize: none;*/
 }
 
 .row {
-display: flex;
-flex-flow: row;
-align-content: space-around;
-flex-basis: 0;
-border-bottom: 1px solid #333;
-border-top: 1px solid #333;
+    display: flex;
+    flex-flow: row;
+    align-content: space-around;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
 
 }
 
 #inprice {
-   
     width: 25%;
 }
 
@@ -39,24 +37,23 @@ border-top: 1px solid #333;
 .label {
     display: flex;
     flex-flow: column;
-  
+
 }
 
 .label span {
-
-    order:1;
+    order: 1;
     opacity: 0;
-  
+
 }
 
 .label input {
-    order:2;
+    order: 2;
 }
 
-input:valid~span  {
+input:valid~span {
     opacity: 1;
- 
 }
+
 input:focus~span {
     color: #3399ff;
 }
