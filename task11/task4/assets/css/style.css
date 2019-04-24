@@ -3,8 +3,33 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     width: 180px;
-	height: 880px;
+    height: 880px;
     border: 1px solid #d43737;
+    background-color: #161b29;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666699;
+}
+
+a:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666699;
+}
+
+a:active {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #d43737;
+}
+
+a:hover {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ccffff;
 }
 
 #buttonlist {
@@ -14,17 +39,22 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #b6b6b6;
-   
+    background-color: #202538;
+
 }
 
 #addbutton {
-width: 160px;
-height: 44px;
-cursor: pointer;
-text-transform: uppercase;
-align-content: center;
-background-color: #999999;
+    width: 160px;
+    height: 44px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    text-transform: uppercase;
+    align-content: center;
+    background-color: #d43737;
+    font-weight: bold;
+    color: #cccccc;
 }
 
 #navlist {
@@ -33,49 +63,87 @@ background-color: #999999;
     height: 238px;
     flex-flow: column nowrap;
     justify-content: space-around;
- align-content: center;
- align-content: center;
-    background-color: #999999;
-    }
+    align-content: center;
+    align-content: center;
+    background-color: #202538;
+    color: #666699;
+    text-decoration: none;
 
-    .navlisti {
-        width: 160px;
-        height: 30px; 
-        align-self: center;
-    }
+}
 
-    #advlist {
-        display: flex;
-        width: 180px;
-        height: 178px;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-     align-content: center;
-     align-content: center;
-        background-color: #999999;   
-    }
-    .advlisti {
-        width: 160px;
-        height: 30px; 
-        align-self: center;
-    }
+.navlisti {
+    width: 160px;
+    height: 30px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
 
-    #recentlist {
-        display: flex;
-        width: 180px;
-        height: 338px;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-     align-content: center;
-     align-content: center;
-        background-color: #999999;   
-    }
+.navlisti:hover {
+    background-color: #16A4FA;
+}
 
-    .recentlisti {
-        display: flex;
-        width: 160px;
-        height: 90px; 
-        justify-content: space-between;
-    }
+#advlist {
+    display: flex;
+    width: 180px;
+    height: 178px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-content: center;
+    background-color: #202538;
+}
 
-  
+.advlisti {
+    width: 160px;
+    height: 30px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.advlisti:hover {
+    background-color: #16A4FA;
+}
+
+.advlisti:nth-child(1) i {
+    font-size: small;
+    color: #fa1621;
+}
+
+.advlisti:nth-child(2) i {
+    font-size: small;
+    color: #fad816;
+}
+
+.advlisti:nth-child(3) i {
+    font-size: small;
+    color: #1693fa;
+}
+
+.advlisti:nth-child(4) i {
+    font-size: small;
+    color: #5022cf;
+}
+
+#recentlist {
+    display: flex;
+    width: 180px;
+    height: 338px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-content: center;
+    background-color: #202538;
+    font-size: smaller;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #666699;
+}
+
+.recentlisti {
+    display: flex;
+    width: 160px;
+    height: 90px;
+    justify-content: space-between;
+}
