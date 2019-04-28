@@ -1,0 +1,12 @@
+#user {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left:10px;
+    width: 170px;
+    height: 30px; 
+    border: 1px solid #222;
+}
+
+.hide {
+    display: none;
+}
