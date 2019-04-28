@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    align-content: flex-start;
+    width: 300px;
+    font-size: 80px;
+    letter-spacing: -46px;
+}
+.half{
+    color: orange;
+}
+
+#score {
+    letter-spacing: normal;
+    
+}
