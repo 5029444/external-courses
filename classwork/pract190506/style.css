@@ -1,0 +1,6 @@
+#bookcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1024px;
+};
+
