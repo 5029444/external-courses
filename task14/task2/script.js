@@ -1,4 +1,5 @@
 function Hangman(word) {
+    
     console.log("The Game starts! New word is in Game ")
     word = word.toLowerCase();
     guessed = new Array(word.length).fill("_");
@@ -10,16 +11,9 @@ function Hangman(word) {
     isCorrect = false;
     return {
 
-        startAgain: function () {
-            console.log("You've got an extra chance!");
-            word = word.toLowerCase();
-            guessed = new Array(word.length).fill("_");
-            guessedStr = "";
-            errors = 6;
-            gets = 0;
-            wrong = [];
-            letter = "";
-            isCorrect = false;
+        startAgain: function (word) {
+            return new Hangman(word)
+            
         },
 
         guess: function (letter) {
@@ -66,15 +60,22 @@ function Hangman(word) {
         },
 
         getStatus: function () {
-            return ("Your progress : " + guessedStr + " | errors left " + errors);
+            console.log ("Your progress : " + guessedStr + " | errors left " + errors);
+            return this
         },
+
         getWrongSymbols: function () {
             return ("Wrong sybols : " + wrong);
         }
     };
 };
 
+var hangman = new Hangman("LALABLA");
+hangman.startAgain("webpurple")
+  .guess('w')
+  .getStatus()
 
+/*
 //gameplay winning scenario
 var hangman = new Hangman("LALABLA");
 hangman.guess('l')
@@ -106,4 +107,4 @@ hangman.guess('a');
 console.log("getGuessedString " + hangman.getGuessedString());
 console.log("getErrorsLeft " + hangman.getErrorsLeft());
 console.log("getWrongSymbols " + hangman.getWrongSymbols());
-console.log("getStatus " + hangman.getStatus());
+console.log("getStatus " + hangman.getStatus()); */
