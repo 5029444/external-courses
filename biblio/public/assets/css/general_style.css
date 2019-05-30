@@ -1,0 +1,270 @@
+@import url("modal.css");
+
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/ProximaNova-Regular.ttf"); /* Путь к файлу со шрифтом */
+ }
+
+* {
+ font-family: 'Proxima Nova Rg';
+ 
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+
+  overflow: hidden;
+
+}
+
+.general-wrapper-container {
+  display: flex;
+  width: 99vw;
+  height: 99vh;
+  flex-flow: column nowrap;
+  padding-bottom: 56.25%
+}
+
+header {
+
+  height: 5vh;
+ 
+  background-color: #252c3f;
+}
+
+.header-rightside-display-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0 1rem 0 0;
+  height: 4vh
+}
+
+
+.general-row-wrapper {
+  display: flex;
+  
+  height: 89vh;
+}
+
+nav {
+  display:flex;
+  flex-flow: column nowrap;
+  flex: 1 1 100%;
+ 
+ 
+  align-content: space-between;
+  justify-content: space-around;
+  background-color: #161b29;
+  
+}
+
+
+.navbar-bigbutton-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+ align-content: center;
+ align-items: center;
+  
+  flex: 1 1 30%;
+  margin:0.1vh 0 0 0;
+  background-color: #252c3f;
+}
+
+#navbar-bigbutton-modal-10-dashboard {
+  width: 9vw;
+  height: 6vh;
+  text-transform: uppercase;
+  font-size: calc(0.5vw + 0.5vh + 0.3vmin);
+  font-weight: bolder;
+  background-color: #d43737;
+  border: none;
+  color: #eeee
+
+}
+
+.navbar-navigation-section {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  flex: 1 1 30%;
+  margin:0.2vh 0 0.1vh 0;
+  background-color: #252c3f; 
+ 
+}
+
+.navbar-navigation-section li {
+  align-self: stretch;
+}
+
+.navbar-navigation-section li:hover {
+  background-color: #16A4FA;
+  
+}
+
+
+.navbar-categories-section {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  flex: 1 1 20%;
+  margin:0.2vh 0 0.2vh 0;
+  background-color: #252c3f; 
+}
+
+.navbar-categories-section li{
+  align-self: stretch;
+}
+
+.navbar-categories-section li:hover {
+  background-color: #16A4FA; 
+}
+
+.navbar-userlogs-section {
+  flex-flow: column nowrap;
+  flex: 1 1 60%;
+  align-self: stretch;;
+  
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #252c3f;
+}
+
+main {
+ width:88vw;
+
+}
+
+.main-upper-display-section {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 7vh;
+  width:86vw;
+  margin: 0 0 0 0;
+  background-color: #ddd
+}
+
+.main-uppper-leftside-display-element {
+  margin: 0 0 0 5vmin;
+  text-transform: capitalize;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  color: #333;
+}
+
+.main-upper-searchbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  width:86vw;
+  height: 7vh;
+  background-color: #ddd
+}
+
+.searchbar-leftside-filters-container {
+  display: flex;
+  margin: 0 0 0 1rem;
+  list-style-type: none;
+}
+
+
+.main-searchbar-rightside-search-container {
+  position: relative;
+  margin: 0 3vw 0 0;
+}
+
+#site-main-search {
+  flex: 1 1 auto;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: none;
+  outline:none;
+  height: 4vh;
+  width: 20vw;
+  background: #ffff;
+}
+.fa-search {
+  position: absolute;
+  margin: 1vh 0 0 18vw;
+  color: #666
+}
+
+.search-lable {
+  position: absolute;
+  z-index: 10;
+  background: #dddd;
+  width: 19vw;
+  margin: 0.5vh 0 0 0.5vw;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0 0 0 1vw;
+}
+
+.main-dynamic-content-frame {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 86vw;
+ height:73vh;
+}
+
+.dynamic-content-item-container {
+color: orange
+}
+
+.dynamic-item-pic {
+  margin: 0.5vmin; 
+  width:21vmin; 
+  height:31vmin
+}
+
+.dynamic-item-title {
+  margin: 0 0 0 0.4vmin; 
+  font-size: calc(0.65vw + 0.62vh + 0.32vmin)
+
+}
+
+.dynamic-item-author {
+  margin: 0 0 0 0.4vmin;
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin)
+}
+
+footer {
+  background-color: #252c3f;
+  width: 99vw;
+  height: 4vh;
+}
+
+.star-model {
+  margin: 0 0 0 0.4vmin;
+  color: orange;
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin);
+}
+
+.hidden-raiting-stars-model {
+  display:none;
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #504f4f4d; 
+  border-radius: 0.4vw;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.4vw;
+  -webkit-box-shadow: inset 0 0 6px #504f4f4d; ; 
+}
