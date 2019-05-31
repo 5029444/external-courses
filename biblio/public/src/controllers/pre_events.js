@@ -3,16 +3,13 @@ function modalRoutineStart() {
     var addModalClick = new AddModalCkickListeners("header-rightside-display-item-modal-2-login", "modal-2")
     var addModalClick = new AddModalCkickListeners("navbar-bigbutton-modal-10-dashboard", "modal-10")
 
-    console.log("modalstart")
-
 };
 
 function filterRoutineStart() {
     var addFilterClick = new AddFilterCkickListeners(".navbar-navigation-section")
     var addFilterClick = new AddFilterCkickListeners(".navbar-categories-section")
     var addFilterClick = new AddFilterCkickListeners(".searchbar-leftside-filters-container")
-    console.log("mouseclick")
-   
+
 };
 
 function areaTriggersforHeaderDisplay() {
@@ -20,11 +17,11 @@ function areaTriggersforHeaderDisplay() {
     var addFilterMover = new AddFilterMouseOverListeners(".navbar-navigation-section", filterShowDisplay)
     var addFilterMover = new AddFilterMouseOverListeners(".navbar-categories-section", filterShowDisplay)
     var addFilterMover = new AddFilterMouseOverListeners(".searchbar-leftside-filters-container", filterShowDisplay)
-    console.log("mouseover")
+
     var addFilterMleave = new AddFilterMouseLeaveListeners(".navbar-navigation-section", filterShowDisplay)
     var addFilterMleave = new AddFilterMouseLeaveListeners(".navbar-categories-section", filterShowDisplay)
     var addFilterMleave = new AddFilterMouseLeaveListeners(".searchbar-leftside-filters-container", filterShowDisplay)
-   
+
 };
 
 
@@ -104,7 +101,7 @@ function AddFilterMouseOverListeners(elementId, filterShowDisplay) {
                 filterShowDisplay.innerHTML = event.target.innerHTML;
             };
         };
-    }
+    };
     this.element.addEventListener("mouseover", this.act.bind(this), false)
 };
 
@@ -117,37 +114,37 @@ function AddFilterMouseLeaveListeners(elementId, filterShowDisplay) {
     this.element.addEventListener("mouseleave", this.act.bind(this), false)
 };
 
-function searchReset () {
+function searchReset() {
     searchFocus = document.querySelector(".main-searchbar-rightside-search-container")
-     
+
     searchFocus.addEventListener("mouseleave", function handlerSearch(e) {
-    searchLable = document.querySelector(".search-lable")
-    searchLable.innerHTML = ""
-    UserModel.User.setCache("bookscollection", JSON.parse(JSON.stringify(UserModel.User.getCache("searchcollection"))))
-    document.forms[0].reset();
-    //renderBooks()
+        searchLable = document.querySelector(".search-lable")
+        searchLable.innerHTML = ""
+        UserModel.User.setCache("bookscollection", JSON.parse(JSON.stringify(UserModel.User.getCache("searchcollection"))))
+        document.forms[0].reset();
     });
 };
 
-function dynIdPrepare () {
+function dynIdPrepare() {
     for (const key of Object.keys(routsIdTemplate)) {
-       tempEl=document.querySelector(key);
-      tempEl.setAttribute("id", routsIdTemplate[key]);
-    }
-      
+        tempEl = document.querySelector(key);
+        tempEl.setAttribute("id", routsIdTemplate[key]);
+    };
+
 };
 
-function cssBeforeIconsPrepare () {
+function cssBeforeIconsPrepare() {
     for (const key of Object.keys(cssIconsTemplate)) {
-        cssEl=document.querySelector(key);
+        cssEl = document.querySelector(key);
         oldInnerHTML = cssEl.innerHTML
-       cssEl.innerHTML = cssIconsTemplate[key]  + "&nbsp;&nbsp;&nbsp;" + oldInnerHTML
+        cssEl.innerHTML = cssIconsTemplate[key] + "&nbsp;&nbsp;&nbsp;" + oldInnerHTML
 
-     }   
-}
+    };
+};
 
-function addLogoutListener (){
-ement = document.getElementById("header-rightside-display-item-modal-3-logout")
-ement.addEventListener("click", function handlerSearch(e) {
-    logout() })
-}
+function addLogoutListener() {
+    ement = document.getElementById("header-rightside-display-item-modal-3-logout")
+    ement.addEventListener("click", function handlerSearch(e) {
+        logout()
+    });
+};

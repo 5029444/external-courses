@@ -19,7 +19,7 @@ function addBook() {
         non_fiction: cats[3].checked,
         createdAt: Date.now(),
         updatedAt: Date.now(),
-        ownedby: sessionStorage.getItem ("username")
+        ownedby: sessionStorage.getItem("username")
     };
 
     myFetch("POST", "/addbook", newBook)
@@ -35,6 +35,6 @@ function addBook() {
 function checkAddStatus(result, newBook, inputs) {
     if (result.status === true) {
         MicroModal.close('modal-10');
-        
+
     } else {};
 };

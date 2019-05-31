@@ -2,15 +2,15 @@ function modalRoutineStart() {
     var addModalClick = new AddModalCkickListeners("modal-1-trigger-register", "modal-1")
     var addModalClick = new AddModalCkickListeners("modal-2-trigger-login", "modal-2")
     var addModalClick = new AddModalCkickListeners("modal-10-trigger-dashboard", "modal-10")
-    console.log ("modalstart")
-return
+
+    return
 };
 
 function filterRoutineStart() {
     var addFilterClick = new AddFilterCkickListeners(".navbar-navigation-section")
     var addFilterClick = new AddFilterCkickListeners(".navbar-categories-section")
     var addFilterClick = new AddFilterCkickListeners(".searchbar-leftside-filters-section")
-    console.log ("mouseclick")
+
     return
 };
 
@@ -19,7 +19,7 @@ function areaTriggersforHeaderDisplay() {
     var addFilterMover = new AddFilterMouseOverListeners(".navbar-navigation-section", filterShowDisplay)
     var addFilterMover = new AddFilterMouseOverListeners(".navbar-categories-section", filterShowDisplay)
     var addFilterMover = new AddFilterMouseOverListeners(".searchbar-leftside-filters-section", filterShowDisplay)
-console.log ("mouseover")
+
     var addFilterMleave = new AddFilterMouseLeaveListeners(".navbar-navigation-section", filterShowDisplay)
     var addFilterMleave = new AddFilterMouseLeaveListeners(".navbar-categories-section", filterShowDisplay)
     var addFilterMleave = new AddFilterMouseLeaveListeners(".searchbar-leftside-filters-section", filterShowDisplay)
@@ -33,21 +33,18 @@ function AddModalCkickListeners(elementId, areaId) {
         MicroModalConfig(areaId)
     };
     this.element.addEventListener('click', this.act.bind(this), false);
-    
+
 };
 
 function AddFilterCkickListeners(elementId) {
     this.element = document.querySelector(elementId);
     this.act = function (event) {
         loadPath = event.target.id
-        console.log (this)
-        console.log(loadPath)
-        
         UserModel.User.setCache("url", loadPath)
         kindOfRouter.call()
     };
     this.element.addEventListener('click', this.act.bind(this));
-    
+
 };
 
 function AddFilterMouseOverListeners(elementId, filterShowDisplay) {

@@ -4,7 +4,7 @@ function logout() {
     myFetch("POST", "/logout")
     setTimeout(function () {
         window.location.replace("/");
-        }, 3000);
-   
+    }, 3000);
+
 
 };

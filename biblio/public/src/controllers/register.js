@@ -21,15 +21,14 @@ function register() {
       .catch(function (err) {
         console.error("there was an error", err.statusText);
       });
-
-  }
+  };
 
   function checkRegisterStatus(result) {
     if (result.status === true) {
-        MicroModal.close('modal-1');
-        MicroModal.show('modal-2');
+      MicroModal.close('modal-1');
+      MicroModal.show('modal-2');
     } else {
       console.error("Error");
-    }
-  }
-}
+    };
+  };
+};

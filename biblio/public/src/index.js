@@ -11,10 +11,10 @@ function include(file, callback) {
     document.getElementsByTagName("head").item(0).appendChild(script);
   } else {
     callback()
-  }
+  };
 };
 
-function includeAddList() { 
+function includeAddList() {
   include("src/models/model_user.js");
   include("src/models/model_utils.js");
   include("src/models/templates.js");
@@ -30,15 +30,13 @@ function includeAddList() {
   include("src/controllers/dashboard.js");
   include("src/vendor/micromodal.min.js");
   include(null, transportGasket);
-  }
+};
 
-   function transportGasket() {
-    setTimeout(function () {
-     initMainThread()
-     }, 4000);
-  }
-
-
+function transportGasket() {
+  setTimeout(function () {
+    initMainThread()
+  }, 4000);
+};
 
 function myFetch(xhrMethod, url, xhrBody) {
   return new Promise(function (resolve, reject) {
@@ -55,7 +53,7 @@ function myFetch(xhrMethod, url, xhrBody) {
           status: this.status,
           statusText: xhr.statusText
         });
-      }
+      };
     };
     xhr.onerror = function () {
       reject({
@@ -67,20 +65,17 @@ function myFetch(xhrMethod, url, xhrBody) {
   });
 };
 
-function checkUser () {
-  console.log ("check")
+function checkUser() {
   myFetch("GET", "/check")
-  .then(function (dataset) {
-    return JSON.parse(dataset.response); 
-}).then(function (data) {
-    console.log(data.name)
-    console.log(data.email)
-    sessionStorage.setItem ("username", data.name)
-    sessionStorage.setItem ("useremail", data.email)
-    
-})
-.catch(function (err) {
-    console.error("there was an error", err.statusText);
-  
-});
-}
+    .then(function (dataset) {
+      return JSON.parse(dataset.response);
+    }).then(function (data) {
+      sessionStorage.setItem("username", data.name)
+      sessionStorage.setItem("useremail", data.email)
+
+    })
+    .catch(function (err) {
+      console.error("there was an error", err.statusText);
+
+    });
+};

@@ -1,5 +1,4 @@
 
-
 const starsElementsTemplate = {
 0: "<i class='star-model far fa-star'></i><i class='star-model far fa-star'> </i><i class='star-model far fa-star'></i><i class='star-model far fa-star'></i><i class='star-model far fa-star'></i>",
 0.5: "<i class='star-model fas fa-star-half-alt'></i><i class='star-model far fa-star'> </i><i class='star-model far fa-star'></i><i class='star-model far fa-star'></i><i class='star-model far fa-star'></i>",
@@ -12,7 +11,7 @@ const starsElementsTemplate = {
 4: "<i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model far fa-star'></i>",
 4.5: "<i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star-half-alt'></i>",
 5: "<i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i><i class='star-model fas fa-star'></i>",
-}
+};
 
 const routsIdTemplate = {
     ".navbar-navigation-trigger-reading": "/readnow",
@@ -36,7 +35,7 @@ const modalToggleShema = {
     1: "header-rightside-display-item-modal-2-login",
     3: "header-rightside-display-item-modal-3-logout",
     4: "header-rightside-display-item-modal-4-ava"
-  }
+  };
 
   const cssIconsTemplate = {
     ".navbar-navigation-trigger-reading": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fab fa-leanpub"></i>',
@@ -50,4 +49,4 @@ const modalToggleShema = {
     ".navbar-categories-trigger-classic":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: seagreen;"class="far fa-dot-circle"></i>',
     ".navbar-categories-trigger-nonfiction":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: slateblue;" class="far fa-dot-circle"></i>',
     
-  }
+  };

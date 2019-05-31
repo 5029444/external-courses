@@ -22,21 +22,15 @@ MicroModalConfig = function (areaId) {
 
 function makeRaitingStarsModel() {
   Starmodel = starsElementsTemplate;
- // for (i = 0; i <= 5; i = i + 0.5) {
- //   var stari = document.getElementById(i)
- //   Starmodel[i] = stari.innerHTML
-    //console.log (Starmodel)
-  //}
   return
 };
 
 function sortByDate() {
   let booksToSort = UserModel.User.getCache("bookscollection")
-  console.log("sortingBooks")
   arr = booksToSort.sort(function (a, b) {
     return (b.createdAt - a.createdAt);
   });
   UserModel.User.setCache("bookscollection", booksToSort)
 
-  renderBooks()
+  renderBooks();
 }

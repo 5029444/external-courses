@@ -1,5 +1,4 @@
 function addRatingListeners(starSet, raiting, j) {
-    console.log("ad star mover")
 
     HandlerMoveInStorage[j] = function handlerMove(e) {
         var offsetX = e.offsetX;
@@ -32,8 +31,8 @@ function addRatingListeners(starSet, raiting, j) {
         //TODO
         // submit raiting to Mongo
 
-    })
-}
+    };)
+};
 
 function searchInit() {
     searchLable = document.querySelector(".search-lable")
@@ -57,7 +56,7 @@ function searchDisplay() {
     searchLable.innerHTML = ""
     if ((UserModel.User.getCache("searchinputold")).length > (UserModel.User.getCache("searchinput")).length || (UserModel.User.getCache("searchinput")).length == 0) {
         UserModel.User.setCache("bookscollection", JSON.parse(JSON.stringify(UserModel.User.getCache("searchcollection"))))
-    }
+    };
     booksToSearch = UserModel.User.getCache("bookscollection")
 
     searchString = ""
@@ -85,7 +84,7 @@ function searchDisplay() {
         var searchLable = document.querySelector(".search-lable")
         searchLable.innerHTML = UserModel.User.getCache("searchprompt")
 
-     
+
 
         renderBooks()
     };

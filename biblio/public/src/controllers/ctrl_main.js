@@ -1,17 +1,16 @@
 function initMainThread() {
 
-    console.log("mainThread")
-    initUserModel ()
-    checkUser ()
-    dynIdPrepare ();
-    cssBeforeIconsPrepare ()
-    makeRaitingStarsModel(); //model.utils
-    modalRoutineStart(); //pre.events
-    filterRoutineStart(); //pre.events
-    addLogoutListener ()
-    areaTriggersforHeaderDisplay()
+    initUserModel();
+    checkUser();
+    dynIdPrepare();
+    cssBeforeIconsPrepare();
+    makeRaitingStarsModel(); 
+    modalRoutineStart(); 
+    filterRoutineStart(); 
+    addLogoutListener();
+    areaTriggersforHeaderDisplay();
     searchInit();
-    searchReset ();
-    kindOfRouter(); //ctrl_user
+    searchReset();
+    kindOfRouter(); 
 
-}
+};

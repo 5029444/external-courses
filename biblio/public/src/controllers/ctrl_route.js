@@ -1,15 +1,13 @@
 function kindOfRouter() {
-  console.log("Router")
+ 
   loadPath = UserModel.User.getCache("url")
   xhrMethod = UserModel.User.getCache("xhrMethod")
   userName = sessionStorage.getItem ("username")
-  console.log(UserModel.User.getCache("url"))
-  console.log(sessionStorage.getItem ("username"))
-  console.log(sessionStorage.getItem("useremail"))
+  
   //exclusevly to show an example of the Task sorting at client-side
   //no need actually. may be deleted.
   if (loadPath == "/recent") {
-    sortByDate()
+    sortByDate();
   };
 
   if (userName == "undefined") {
@@ -27,8 +25,8 @@ function kindOfRouter() {
 };
 
 function routeAfterData(err, datahere) {
-  console.log("routeAterData")
-  setHeaderRight()
-  userLogsRoutine()
-  renderBooks()
+
+  setHeaderRight();
+  userLogsRoutine();
+  renderBooks();
 };

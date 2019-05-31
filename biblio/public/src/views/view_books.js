@@ -1,12 +1,8 @@
 function renderBooks() {
-  console.log("Render")
-  
-  
+
   var startContentFrame = document.querySelector(".main-dynamic-content-frame");
   var substartDynamicElement = "";
-  
   booksToWork = UserModel.User.getCache("bookscollection")
-
   while (startContentFrame.firstChild) {
     startContentFrame.removeChild(startContentFrame.firstChild);
   };
@@ -14,7 +10,6 @@ function renderBooks() {
   for (var j in booksToWork) {
     raiting = (booksToWork[j].raiting)
     let = mergedAuthorName = (booksToWork[j].authorFirstName + " " + booksToWork[j].authorLastName)
-    //star = document.getElementById(raiting);
     renderDynamicItem(startContentFrame, booksToWork[j].title, mergedAuthorName, j);
     renderDynamicCover(booksToWork[j].image_url);
     renderDynamicTitle(booksToWork[j].title);
@@ -38,7 +33,7 @@ function renderBooks() {
     div.setAttribute("style", "background:url(" + cover + ") center center; background-size: cover;");
     div.setAttribute("class", "dynamic-item-pic");
     substartDynamicElement.appendChild(div)
-   
+
   };
 
   function renderDynamicTitle(title) {
@@ -46,7 +41,6 @@ function renderBooks() {
     div.innerHTML = (title)
     div.setAttribute("class", "dynamic-item-title");
     substartDynamicElement.appendChild(div)
-   
   };
 
   function renderDynamicAuthor(mergedAuthorName) {
@@ -54,7 +48,6 @@ function renderBooks() {
     div.setAttribute("class", "dynamic-item-author");
     div.innerHTML = ("by " + mergedAuthorName)
     substartDynamicElement.appendChild(div)
-   
   };
 
   function renderDynamicRaiting(raiting) {
@@ -65,7 +58,5 @@ function renderBooks() {
     substartDynamicElement.appendChild(div)
     starSet = div
     addRatingListeners(starSet, raiting, j)
-
- 
   };
-}
+};

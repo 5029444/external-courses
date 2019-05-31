@@ -22,25 +22,24 @@ function login() {
 
 function checkLoginStatus(result) {
   if (result.msg === "User doesn't exist") {
-    console.log("error Redirect User");
     //window.location.replace("/register.html");
-     MicroModal.close('modal-2');
-     MicroModal.show('modal-1');
+    MicroModal.close('modal-2');
+    MicroModal.show('modal-1');
   };
 
   if (result.status == true) {
     localStorage.clear();
     sessionStorage.clear()
     UserModel.User.setCache("url", "/getuserbooks")
-    UserModel.User.setCache("username", result.name) 
-    sessionStorage.setItem ("username", result.name)
+    UserModel.User.setCache("username", result.name)
+    sessionStorage.setItem("username", result.name)
     UserModel.User.setCache("useremail", result.email)
-    localStorage.setItem([Date.now()], "You sucsessfully logged in")  
-    
-   
+    localStorage.setItem([Date.now()], "You sucsessfully logged in")
+
+
     MicroModal.close('modal-2');
-   window.location.replace("/");
-  kindOfRouter()
+    window.location.replace("/");
+    kindOfRouter()
   } else {
     console.log(result);
   };
