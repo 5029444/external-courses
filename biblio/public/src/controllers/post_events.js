@@ -31,7 +31,7 @@ function addRatingListeners(starSet, raiting, j) {
         //TODO
         // submit raiting to Mongo
 
-    };)
+    })
 };
 
 function searchInit() {

@@ -5,12 +5,11 @@
   font-family: "Proxima Nova Rg";
   font-weight: normal;
   font-style: normal;
-  src: url("/assets/fonts/ProximaNova-Regular.ttf"); /* Путь к файлу со шрифтом */
- }
+  src: url("/assets/fonts/ProximaNova-Regular.ttf");
+}
 
 * {
- font-family: 'Proxima Nova Rg';
- 
+  font-family: 'Proxima Nova Rg';
 }
 
 ul {
@@ -18,9 +17,7 @@ ul {
 }
 
 body {
-
   overflow: hidden;
-
 }
 
 .general-wrapper-container {
@@ -31,11 +28,11 @@ body {
   padding-bottom: 56.25%
 }
 
-header {
 
-  height: 5vh;
- 
-  background-color: #252c3f;
+header {
+  flex: 1 1 7%;
+  background-color: #283352;
+  font-size: calc(0.6vw + 0.6vh + 0.3vmin);
 }
 
 .header-rightside-display-section {
@@ -50,33 +47,32 @@ header {
 
 .general-row-wrapper {
   display: flex;
-  
   height: 89vh;
+  flex: 1 1 100%;
 }
 
 nav {
-  display:flex;
+  display: flex;
   flex-flow: column nowrap;
-  flex: 1 1 100%;
- 
- 
+  flex: 1 1 15%;
   align-content: space-between;
   justify-content: space-around;
   background-color: #161b29;
-  
+  text-transform: capitalize;
+    color: #666699;
+    font-size: calc(0.6vw + 0.6vh + 0.3vmin);
 }
-
 
 .navbar-bigbutton-section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
- align-content: center;
- align-items: center;
-  
-  flex: 1 1 30%;
-  margin:0.1vh 0 0 0;
+  align-content: center;
+  align-items: center;
+  flex: 1 1 15%;
+  margin: 0 0 0 0;
   background-color: #252c3f;
+
 }
 
 #navbar-bigbutton-modal-10-dashboard {
@@ -88,8 +84,8 @@ nav {
   background-color: #d43737;
   border: none;
   color: #eeee
-
 }
+
 
 .navbar-navigation-section {
   list-style-type: none;
@@ -97,19 +93,22 @@ nav {
   justify-content: space-around;
   flex-flow: column nowrap;
   flex: 1 1 30%;
-  margin:0.2vh 0 0.1vh 0;
-  background-color: #252c3f; 
- 
+  margin: 0.2vh 0 0.1vh 0;
+  background-color: #252c3f;
 }
 
 .navbar-navigation-section li {
   align-self: stretch;
+  flex: 1 1 20%;
+  padding: 1vh 0 0 0
 }
 
 .navbar-navigation-section li:hover {
   background-color: #16A4FA;
-  
+  text-transform: capitalize;
+  color: #ccffff;
 }
+
 
 
 .navbar-categories-section {
@@ -118,39 +117,46 @@ nav {
   justify-content: space-around;
   flex-flow: column nowrap;
   flex: 1 1 20%;
-  margin:0.2vh 0 0.2vh 0;
-  background-color: #252c3f; 
+  margin: 0.2vh 0 0.2vh 0;
+  background-color: #252c3f;
 }
 
-.navbar-categories-section li{
+.navbar-categories-section li {
   align-self: stretch;
+  flex: 1 1 20%;
+  padding: 1vh 0 0 0
 }
 
 .navbar-categories-section li:hover {
-  background-color: #16A4FA; 
+  background-color: #16A4FA;
+  text-transform: capitalize;
+  color: #ccffff;
 }
 
 .navbar-userlogs-section {
   flex-flow: column nowrap;
-  flex: 1 1 60%;
-  align-self: stretch;;
-  
+  flex: 1 1 35%;
+  align-self: stretch;
   overflow: hidden;
   overflow-y: scroll;
   background-color: #252c3f;
+  font-size: calc(0.4vw + 0.4vh + 0.2vmin);
 }
 
-main {
- width:88vw;
 
+
+main {
+  flex: 1 1 85%;
+  font-size: calc(0.6vw + 0.6vh + 0.3vmin);
+  display:flex;
+  flex-flow: column nowrap;
 }
 
 .main-upper-display-section {
   display: flex;
   align-items: center;
   align-content: center;
-  height: 7vh;
-  width:86vw;
+  flex: 1 1 8%;
   margin: 0 0 0 0;
   background-color: #ddd
 }
@@ -162,22 +168,24 @@ main {
   color: #333;
 }
 
+
+
 .main-upper-searchbar-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   align-content: center;
-  width:86vw;
-  height: 7vh;
+  flex: 1 1 7%;
   background-color: #ddd
 }
 
 .searchbar-leftside-filters-container {
   display: flex;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1vw;
   list-style-type: none;
+  text-transform: capitalize;
+  color: #83839b;
 }
-
 
 .main-searchbar-rightside-search-container {
   position: relative;
@@ -188,11 +196,12 @@ main {
   flex: 1 1 auto;
   border-radius: 100px 100px 100px 100px;
   box-shadow: none;
-  outline:none;
+  outline: none;
   height: 4vh;
   width: 20vw;
   background: #ffff;
 }
+
 .fa-search {
   position: absolute;
   margin: 1vh 0 0 18vw;
@@ -214,35 +223,29 @@ main {
   flex-wrap: wrap;
   overflow: hidden;
   overflow-y: scroll;
-  width: 86vw;
- height:73vh;
+  flex: 1 1 85%;
 }
 
+
+
 .dynamic-content-item-container {
-color: orange
+  color: orange
 }
 
 .dynamic-item-pic {
-  margin: 0.5vmin; 
-  width:21vmin; 
-  height:31vmin
+  margin: 0.5vmin;
+  width: 21vmin;
+  height: 31vmin
 }
 
 .dynamic-item-title {
-  margin: 0 0 0 0.4vmin; 
+  margin: 0 0 0 0.4vmin;
   font-size: calc(0.65vw + 0.62vh + 0.32vmin)
-
 }
 
 .dynamic-item-author {
   margin: 0 0 0 0.4vmin;
   font-size: calc(0.5vw + 0.5vh + 0.25vmin)
-}
-
-footer {
-  background-color: #252c3f;
-  width: 99vw;
-  height: 4vh;
 }
 
 .star-model {
@@ -251,8 +254,16 @@ footer {
   font-size: calc(0.5vw + 0.5vh + 0.25vmin);
 }
 
+
+
+footer {
+  background-color: #161b29;
+  flex: 1 1 7%;
+  font-size: calc(0.6vw + 0.6vh + 0.3vmin);
+}
+
 .hidden-raiting-stars-model {
-  display:none;
+  display: none;
 }
 
 ::-webkit-scrollbar {
@@ -260,11 +271,11 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #504f4f4d; 
+  -webkit-box-shadow: inset 0 0 6px #504f4f4d;
   border-radius: 0.4vw;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.4vw;
-  -webkit-box-shadow: inset 0 0 6px #504f4f4d; ; 
+  -webkit-box-shadow: inset 0 0 6px #504f4f4d;
 }
