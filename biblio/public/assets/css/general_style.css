@@ -59,8 +59,8 @@ nav {
   justify-content: space-around;
   background-color: #161b29;
   text-transform: capitalize;
-    color: #666699;
-    font-size: calc(0.6vw + 0.6vh + 0.3vmin);
+  color: #666699;
+  font-size: calc(0.6vw + 0.6vh + 0.3vmin);
 }
 
 .navbar-bigbutton-section {
@@ -148,7 +148,7 @@ nav {
 main {
   flex: 1 1 85%;
   font-size: calc(0.6vw + 0.6vh + 0.3vmin);
-  display:flex;
+  display: flex;
   flex-flow: column nowrap;
 }
 
@@ -158,14 +158,18 @@ main {
   align-content: center;
   flex: 1 1 8%;
   margin: 0 0 0 0;
-  background-color: #ddd
+  background-color: #EEF1FA;
+  border-bottom: 0.02vmin #ddd solid;
+
+
+
 }
 
 .main-uppper-leftside-display-element {
-  margin: 0 0 0 5vmin;
   text-transform: capitalize;
   font-size: calc(1vw + 1vh + 0.5vmin);
   color: #333;
+  margin-left: calc(3vmin* 50 / 69);
 }
 
 
@@ -176,7 +180,7 @@ main {
   align-items: flex-start;
   align-content: center;
   flex: 1 1 7%;
-  background-color: #ddd
+  background-color: #EEF1FA;
 }
 
 .searchbar-leftside-filters-container {
@@ -185,11 +189,13 @@ main {
   list-style-type: none;
   text-transform: capitalize;
   color: #83839b;
+  margin-top: calc(2vmin* 50 / 69);
 }
 
 .main-searchbar-rightside-search-container {
   position: relative;
-  margin: 0 3vw 0 0;
+  margin-top: calc(1.5vmin* 50 / 69);
+  margin-right: calc(2vmin* 50 / 69);
 }
 
 #site-main-search {
@@ -224,34 +230,48 @@ main {
   overflow: hidden;
   overflow-y: scroll;
   flex: 1 1 85%;
+  margin-left: calc(2.5vmin* 50 / 69);
+  margin-top: calc(3vmin* 50 / 69);
 }
 
-
-
-.dynamic-content-item-container {
-  color: orange
-}
+.main-dynamic-content-frame:first-child {}
 
 .dynamic-item-pic {
-  margin: 0.5vmin;
-  width: 21vmin;
-  height: 31vmin
+  height: 34vmin;
+  width: calc(34vmin * 50 / 69);
+  margin-top: calc(0.5vmin* 50 / 69);
+  margin-right: calc(0.5vmin* 50 / 69);
+  margin-left: calc(0.5vmin* 50 / 69);
+
+
 }
 
 .dynamic-item-title {
-  margin: 0 0 0 0.4vmin;
-  font-size: calc(0.65vw + 0.62vh + 0.32vmin)
+  height: 4vmin;
+  width: calc(34vmin * 50 / 69);
+  line-height: calc(2.8vmin * 50 / 69);
+  font-weight: bolder;
+  color: #5f5f5f;
+  margin-top: calc(1.5vmin* 50 / 69);
+  margin-left: calc(1vmin* 50 / 69);
+
 }
 
 .dynamic-item-author {
-  margin: 0 0 0 0.4vmin;
-  font-size: calc(0.5vw + 0.5vh + 0.25vmin)
+  width: calc(34vmin * 50 / 69);
+  font-weight: lighter;
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin);
+  color: #555;
+  /* margin-top: calc(0.5vmin* 50 / 69) ;*/
+  margin-left: calc(1vmin* 50 / 69);
 }
 
 .star-model {
-  margin: 0 0 0 0.4vmin;
-  color: orange;
   font-size: calc(0.5vw + 0.5vh + 0.25vmin);
+  color: orange;
+  margin-top: calc(1.5vmin* 50 / 69);
+  margin-left: calc(0.3vmin* 50 / 69);
+  margin-bottom: calc(3vmin* 50 / 69);
 }
 
 
