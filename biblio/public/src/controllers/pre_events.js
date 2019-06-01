@@ -95,10 +95,16 @@ function AddFilterMouseOverListeners(elementId, filterShowDisplay) {
     this.act = function (event) {
         filterShowDisplay.style.opacity = 1
         if (event.target.nodeName != "UL") {
+            var tempStr = (event.target.innerHTML);
+            var lastI = event.target.innerHTML.lastIndexOf(';');
+            tempStr = tempStr.substring(lastI + 1);
+            if (tempStr == "browse") {
+                tempStr = tempStr + " available books"
+            };
             if (elementId == ".navbar-categories-section") {
-                filterShowDisplay.innerHTML = event.target.innerHTML + " books";
+                filterShowDisplay.innerHTML = tempStr + " books";
             } else {
-                filterShowDisplay.innerHTML = event.target.innerHTML;
+                filterShowDisplay.innerHTML = tempStr;
             };
         };
     };
@@ -137,7 +143,7 @@ function cssBeforeIconsPrepare() {
     for (const key of Object.keys(cssIconsTemplate)) {
         cssEl = document.querySelector(key);
         oldInnerHTML = cssEl.innerHTML
-        cssEl.innerHTML = cssIconsTemplate[key] + "&nbsp;&nbsp;&nbsp;" + oldInnerHTML
+        cssEl.innerHTML = cssIconsTemplate[key] + oldInnerHTML
 
     };
 };

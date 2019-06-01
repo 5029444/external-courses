@@ -38,15 +38,15 @@ const modalToggleShema = {
   };
 
   const cssIconsTemplate = {
-    ".navbar-navigation-trigger-reading": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fab fa-leanpub"></i>',
-    ".navbar-navigation-trigger-browse": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fas fa-globe-americas"></i>',
-    ".navbar-navigation-trigger-shop": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fas fa-shopping-cart"></i>',
-    ".navbar-navigation-trigger-favs": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fab fa-gratipay"></i>',
-    ".navbar-navigation-trigger-wishlist": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fas fa-th-list"></i>',
-    ".navbar-navigation-trigger-history": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.6vw + 0.6vh + 0.3vmin); color: slateblue;" class="fas fa-history"></i>',
-    ".navbar-categories-trigger-must":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: crimson;"class="far fa-dot-circle"></i>',
-    ".navbar-categories-trigger-best":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: orange;"class="far fa-dot-circle"></i>',
-    ".navbar-categories-trigger-classic":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: seagreen;"class="far fa-dot-circle"></i>',
-    ".navbar-categories-trigger-nonfiction":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: slateblue;" class="far fa-dot-circle"></i>',
+    ".navbar-navigation-trigger-reading": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-leanpub"></i>&nbsp;&nbsp;now reading',
+    ".navbar-navigation-trigger-browse": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-globe-americas"></i>&nbsp;&nbsp;browse',
+    ".navbar-navigation-trigger-shop": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;buy books',
+    ".navbar-navigation-trigger-favs": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-gratipay"></i>&nbsp;&nbsp;favourite books',
+    ".navbar-navigation-trigger-wishlist": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-th-list"></i>&nbsp;&nbsp;wishlist',
+    ".navbar-navigation-trigger-history": '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-history"></i>&nbsp;&nbsp;history',
+    ".navbar-categories-trigger-must":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: crimson; "class="far fa-dot-circle"></i>&nbsp;&nbsp;must read',
+    ".navbar-categories-trigger-best":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: orange; "class="far fa-dot-circle"></i>&nbsp;&nbsp;best of list',
+    ".navbar-categories-trigger-classic":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: seagreen; "class="far fa-dot-circle"></i>&nbsp;&nbsp;classic novels',
+    ".navbar-categories-trigger-nonfiction":'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i style="font-size: calc(0.3vw + 0.3vh + 0.15vmin); color: slateblue; "class="far fa-dot-circle"></i>&nbsp;&nbsp;non fiction',
     
   };
