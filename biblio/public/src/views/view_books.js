@@ -11,7 +11,7 @@ function renderBooks() {
     raiting = (booksToWork[j].raiting)
     let = mergedAuthorName = (booksToWork[j].authorFirstName + " " + booksToWork[j].authorLastName)
     renderDynamicItem(startContentFrame, booksToWork[j].title, mergedAuthorName, j);
-    renderDynamicCover(booksToWork[j].image_url);
+    renderDynamicCover(booksToWork[j].imageurl);
     renderDynamicTitle(booksToWork[j].title);
     renderDynamicAuthor(mergedAuthorName)
     renderDynamicRaiting(raiting)

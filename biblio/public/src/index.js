@@ -35,7 +35,7 @@ function includeAddList() {
 function transportGasket() {
   setTimeout(function () {
     initMainThread()
-  }, 4000);
+  }, 3000);
 };
 
 function myFetch(xhrMethod, url, xhrBody) {

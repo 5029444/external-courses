@@ -144,7 +144,7 @@ function cssBeforeIconsPrepare() {
 
 function addLogoutListener() {
     ement = document.getElementById("header-rightside-display-item-modal-3-logout")
-    ement.addEventListener("click", function handlerSearch(e) {
+    ement.addEventListener("click", function handlerLogout(e) {
         logout()
     });
 };
