@@ -12,5 +12,4 @@ function initMainThread() {
     searchInit();
     searchReset();
     kindOfRouter(); 
-
 };

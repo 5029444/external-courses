@@ -4,8 +4,6 @@ function kindOfRouter() {
   xhrMethod = UserModel.User.getCache("xhrMethod")
   userName = sessionStorage.getItem ("username")
   
-  //exclusevly to show an example of the Task sorting at client-side
-  //no need actually. may be deleted.
   if (loadPath == "/recent") {
     sortByDate();
   };
@@ -16,7 +14,7 @@ function kindOfRouter() {
       loadPath == "/favs" ||
       loadPath == "/wishlist" ||
       loadPath == "/history") {
-        MicroModal.show('modal-2')
+      MicroModal.show('modal-2')
     };
   };
 
