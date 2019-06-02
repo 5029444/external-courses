@@ -33,8 +33,9 @@ const routsIdTemplate = {
 const modalToggleShema = {
     0: "header-rightside-display-item-modal-1-register",
     1: "header-rightside-display-item-modal-2-login",
-    3: "header-rightside-display-item-modal-3-logout",
-    4: "header-rightside-display-item-modal-4-ava"
+    2: "header-rightside-display-item-modal-4-ava",
+    3: "header-rightside-display-item-modal-7-name",
+    4: "header-rightside-display-item-modal-3-logout"
   };
 
   const cssIconsTemplate = {

@@ -1,9 +1,9 @@
 function setHeaderRight() {
-  userElement = document.getElementById("header-rightside-display-item-modal-3-logout");
+  userNameElement = document.getElementById("header-rightside-display-item-modal-7-name");
   regElement = document.getElementById("header-rightside-display-item-modal-4-ava");
 
-  if (sessionStorage.getItem("username") != "undefined" && regElement.classList.contains("modal")) {
-    //userElement.innerHTML = sessionStorage.getItem ("username");  ToDo
+  if (sessionStorage.getItem("username") != "undefined") { //&& regElement.classList.contains("modal")) {
+    userNameElement.innerHTML = sessionStorage.getItem ("username"); 
     modalTriggerVisibilityToggle();
   };
 
