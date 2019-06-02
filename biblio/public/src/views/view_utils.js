@@ -2,7 +2,7 @@ function setHeaderRight() {
   userNameElement = document.getElementById("header-rightside-display-item-modal-7-name");
   regElement = document.getElementById("header-rightside-display-item-modal-4-ava");
 
-  if (sessionStorage.getItem("username") != "undefined") { //&& regElement.classList.contains("modal")) {
+  if (sessionStorage.getItem("username") != "undefined" && regElement.classList.contains("modal")) {
     userNameElement.innerHTML = sessionStorage.getItem ("username"); 
     modalTriggerVisibilityToggle();
   };
