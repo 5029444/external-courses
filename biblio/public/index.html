@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/css/general_style.css" rel="stylesheet" type="text/css">
+    <script src="src/index.js"></script>
+    <title>Library Management Project</title>
+</head>
+
+<body class="js-body">
+
+    <header class="general-row-header">
+
+
+        <div class="" id="header-rightside-display-item-modal-5-help">help center </div>
+        <div class="" id="header-rightside-display-item-modal-6-support">our support</div>
+
+        <div class="modal" id="header-rightside-display-item-modal-4-ava"><i class="fas fa-user-tie"></i></div>
+
+        <div class="modal" id="header-rightside-display-item-modal-7-name"></div>
+        <div class="modal" id="header-rightside-display-item-modal-3-logout"><i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <div class="" id="header-rightside-display-item-modal-1-register">sign-in</div>
+        <div class="" id="header-rightside-display-item-modal-2-login">log-in</div>
+
+
+
+    </header>
+
+    <div class="general-row-wrapper">
+
+        <nav>
+            <div class="navbar-bigbutton-section">
+                <button type="button" id="navbar-bigbutton-modal-10-dashboard">➕&nbsp;add a book</button>
+            </div>
+
+            <ul class="navbar-navigation-section">
+                <li class="navbar-navigation-trigger-reading"></li>
+                <li class="navbar-navigation-trigger-browse"></li>
+                <li class="navbar-navigation-trigger-shop"></li>
+                <li class="navbar-navigation-trigger-favs"></li>
+                <li class="navbar-navigation-trigger-wishlist"></li>
+                <li class="navbar-navigation-trigger-history"></li>
+            </ul>
+
+            <ul class="navbar-categories-section">
+                <li class="navbar-categories-trigger-must"></li>
+                <li class="navbar-categories-trigger-best"></li>
+                <li class="navbar-categories-trigger-classic"></li>
+                <li class="navbar-categories-trigger-nonfiction"></li>
+            </ul>
+
+            <div class="navbar-userlogs-section">your logs will be here when you Login </div>
+
+        </nav>
+
+        <main>
+
+            <div class="main-upper-display-section">
+                <div class="main-uppper-leftside-display-element"></div>
+            </div>
+
+            <div class="main-upper-searchbar-section">
+
+                <ul class="searchbar-leftside-filters-container">
+                    <li class="searchbar-leftside-filter-trigger-all">all books</li>
+                    <li class="searchbar-leftside-filter-trigger-recent">most recent</li>
+                    <li class="searchbar-leftside-filter-trigger-pop">most popular</li>
+                    <li class="searchbar-leftside-filter-trigger-free">free books</li>
+                </ul>
+
+                <div class="main-searchbar-rightside-search-container">
+                    <form class="search" action="#">
+                        <i class="fas fa-search"></i>
+                        <input class="main-searchbar-rightside-search-imput" id="site-main-search" submit=false
+                            instant=true type="search" placeholder="Enter Keyworlds" />
+
+                        <label class="search-lable" for="site-main-search">
+                        </label>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="main-dynamic-content-frame"> </div>
+
+        </main>
+
+    </div>
+
+    <footer class="general-row-footer">
+
+        <div class="footer-rightside-item-modal-8-help"><i class="fas fa-question-circle"></i></div>
+        <div class="footer-rightside-item-modal-9-settings"><i class="fas fa-cog"></i></div>
+
+
+    </footer>
+
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <div class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">
+                        ⚿ Sign-In
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </div>
+                <form class="register" action="#" onsubmit="return false;">
+                    <div class="modal__content" id="modal-1-content">
+                        <div class="fields">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" required=""> <br>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required=""> <br>
+                            <label for="password">Password <span>(required)</span></label>
+                            <input name="password" type="password" required=""> <br>
+                            <label for="passwordConf">Confirm Password</label>
+                            <input name="passwordConf" type="password" required="">
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <input type="submit" class="modal__btn modal__btn-primary" name="register" value="Register">
+                        <a data-micromodal-close href="#" aria-label="Close this dialog window">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                <div class="modal__header">
+                    <h3 class="modal__title" id="modal-2-title">
+                        🔒 Login
+                    </h3>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </div>
+                <form class="login" action="#" onsubmit="return false;">
+                    <div class="modal__content" id="modal-2-content">
+                        <div class="fields">
+                            <label for="name">E-mail</label>
+                            <input type="email" name="email">
+
+                            <label for="password">Password <span>(required)</span></label>
+                            <input id="password" name="password" type="password" required="">
+                            <small id="name-desc">Must be atleast 6 characters long.</small>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <input type="submit" class="modal__btn modal__btn-primary" name="login" value="Login">
+                        <a data-micromodal-close href="#" aria-label="Close this dialog window">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-10" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <div class="modal__header">
+                    <h2 class="modal__title" id="modal-4-title">
+                        Dashboard
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </div>
+                <form class="dashboard" action="#" onsubmit="return false;">
+                    <div class="modal__content" id="modal-4-content">
+                        <div class="fields">
+                            <label for="name">Author First Name</label>
+                            <input type="text" name="authorFirstName" placeholder="Author First Name" required="">
+                            <br>
+                            <label for="name">Author First Name</label>
+                            <input type="text" name="authorLastName" placeholder="Author Last Name" required="">
+                            <br>
+                            <label for="name">Title</label>
+                            <input type="text" name="title" placeholder="Title" required=""> <br>
+                            <label for="name">IMG</label>
+                            <input type="text" name="imageurl" placeholder="assets/img/default.jpg"> <br>
+                            <label for="name">Cost</label>
+                            <input type="number" name="cost" placeholder="200"> <br>
+                            <label for="name">Categories</label><br>
+                            <input type="checkbox" name="cats" id="must" value="must">
+                            <label for="must">Must read</label><br>
+                            <input type="checkbox" name="cats" id="best" value="best">
+                            <label for="best">Best of list</label><br>
+                            <input type="checkbox" name="cats" id="classic" value="classic">
+                            <label for="classic">Classic Novel</label><br>
+                            <input type="checkbox" name="cats" id="nonfiction" value="nonfiction">
+                            <label for="nonfiction">Non Fiction</label><br>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <input type="submit" class="modal__btn modal__btn-primary" name="addBook" value="Add Book">
+                        <a data-micromodal-close href="#" aria-label="Close this dialog window">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
