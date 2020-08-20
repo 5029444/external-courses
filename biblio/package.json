@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "~4.16.1",
     "express-session": "^1.15.6",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "~1.4.4",
